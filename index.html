@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>CSS Generator</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <h1>CSS Generator</h1>
+    <form>
+      <label for="background-color">Background color:</label>
+      <input type="color" id="background-color" name="background-color">
+      
+      <label for="border-color">Border color:</label>
+      <input type="color" id="border-color" name="border-color">
+      
+      <label for="border-width">Border width:</label>
+      <input type="number" id="border-width" name="border-width" min="0">
+      
+      <label for="border-style">Border style:</label>
+      <select id="border-style" name="border-style">
+        <option value="none">None</option>
+        <option value="solid">Solid</option>
+        <option value="dotted">Dotted</option>
+        <option value="dashed">Dashed</option>
+        <option value="double">Double</option>
+      </select>
+      
+      <label for="border-radius">Border radius:</label>
+      <input type="number" id="border-radius" name="border-radius" min="0">
+      
+      <button type="submit">Generate CSS</button>
+    </form>
+    
+  
+    
+    <h2>CSS Code</h2>
+    <pre id="css-display"></pre>
+  </body>
+</html>
